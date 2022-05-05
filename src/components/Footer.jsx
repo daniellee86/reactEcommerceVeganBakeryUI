@@ -1,6 +1,6 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
-import {mobile} from "../responsive"
+import {mobile, tablet} from "../responsive"
 
 
 const Container = styled.div`
@@ -79,6 +79,7 @@ const Right = styled.div`
 flex: 1;
 padding: 20px;
 ${mobile({ display: "none" })}
+${tablet({ display: "none" })}
 `
 const ContactItem = styled.div`
 margin-bottom: 20px;

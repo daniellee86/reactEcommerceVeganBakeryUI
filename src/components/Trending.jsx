@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {mobile} from "../responsive"
+import {mobile, tablet} from "../responsive"
 
 const Container = styled.div`
 background-color: #FFFDD0;
@@ -7,6 +7,7 @@ position: relative;
 display: flex;
 align-items: center;
 ${mobile({ display: "none" })}
+${tablet({ display: "none" })}
 
 `
 

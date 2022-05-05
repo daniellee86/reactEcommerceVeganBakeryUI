@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import {mobile} from "../responsive"
+import {mobile, tablet} from "../responsive"
 
 const Container = styled.div`
 height: 100px;
 box-shadow: 0px 3px 10px #D0D0D0;
 ${mobile({ height: "50px" })}
+${tablet({ height: "75px" })}
 `
 const Wrapper = styled.div`
 padding: 15px 40px;
@@ -43,6 +44,7 @@ font-family: 'Yesteryear', cursive;
 font-size: 55px;
 color: #FE7171;
 ${mobile({ fontSize: "25px" })}
+${tablet({ fontSize: "35px" })}
 `
 //
 
@@ -63,6 +65,11 @@ color: ${props=>props.color};
 background-color: ${props=>props.bg};
 border: ${props=>props.border};
 cursor: pointer;
+${tablet({ 
+    padding: "5px 10px",
+    marginLeft: "25px",
+    fontSize:"10px"
+     })}
 `
 //
 
