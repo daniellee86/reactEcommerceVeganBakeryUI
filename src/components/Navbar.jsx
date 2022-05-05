@@ -1,14 +1,17 @@
 import styled from 'styled-components'
+import {mobile} from "../responsive"
 
 const Container = styled.div`
 height: 100px;
 box-shadow: 0px 3px 10px #D0D0D0;
+${mobile({ height: "50px" })}
 `
 const Wrapper = styled.div`
 padding: 15px 40px;
 display: flex;
 justify-content: space-between;
 align-items: center;
+${mobile({ padding: "7px 20px" })}
 `
 //
 const Left = styled.div`
@@ -24,17 +27,22 @@ cursor: pointer;
 margin-right: 45px;
 transition: all 0.5s ease;
 &:hover {transform: scale(1.1)};
+${mobile({ 
+fontSize: "8px",
+marginRight: "20px" })}
 `
 //
 
 const Center = styled.div`
 flex: 1;
 text-align: center;
+${mobile({ flex: "2" })}
 `
 const Logo = styled.h1`
 font-family: 'Yesteryear', cursive;
 font-size: 55px;
 color: #FE7171;
+${mobile({ fontSize: "25px" })}
 `
 //
 
@@ -43,6 +51,7 @@ flex: 1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
+${mobile({ display: "none" })}
 `
 const Button = styled.button`
 margin-left: 35px;

@@ -1,9 +1,11 @@
 import { Facebook, Instagram, MailOutline, Phone, Pinterest, Room, Twitter } from "@material-ui/icons"
 import styled from "styled-components"
+import {mobile} from "../responsive"
 
 
 const Container = styled.div`
 display:flex;
+/* ${mobile({ overflow: "hidden" })} */
 
 `
 //
@@ -19,6 +21,7 @@ const Logo = styled.h1`
 font-family: 'Yesteryear', cursive;
 font-size: 55px;
 color: #FE7171;
+${mobile({ fontSize: "30px" })}
 `
 const SocialContainer = styled.div`
 display: flex;
@@ -41,12 +44,18 @@ transition:all 0.5s ease;
   background-color: black;
   transform: scale(1.1);
 }
+
+${mobile({
+   height: "30px",
+   width: "30px"
+ })}
 `
 
 //
 const Center = styled.div`
 flex: 1;
 padding: 20px;
+${mobile({ display: "none" })}
 
 `
 const Title = styled.h3` 
@@ -69,6 +78,7 @@ margin-bottom: 10px;
 const Right = styled.div`
 flex: 1;
 padding: 20px;
+${mobile({ display: "none" })}
 `
 const ContactItem = styled.div`
 margin-bottom: 20px;

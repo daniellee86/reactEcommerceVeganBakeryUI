@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined } from "@material-ui/icons"
-
+import {mobile} from "../responsive"
 
 const Info = styled.div`
 opacity: 0;
@@ -17,6 +17,7 @@ justify-content: center;
 transition: all 0.5s ease;
 cursor: pointer;
 border-radius: 50%;
+${mobile({ borderRadius: "10%" })}
 `
 
 const Container = styled.div`
@@ -34,6 +35,7 @@ border-radius: 50%;
 &:hover ${Info}{
 opacity: 1;
 }
+${mobile({ borderRadius: "10%" })}
 `
 const Circle = styled.div`
 width: 225px;
@@ -41,6 +43,7 @@ height: 225px;
 background-color: white;
 border-radius: 50%;
 position: absolute;
+
 
 `
 const Image = styled.img`
