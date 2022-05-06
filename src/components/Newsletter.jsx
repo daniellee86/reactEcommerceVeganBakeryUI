@@ -31,7 +31,7 @@ background-color: white;
 display: flex;
 justify-content: space-between;
 border:2px solid lightgray;
-${mobile({ width: "60%" })}
+${mobile({ width: "70%" })}
 `
 const Input = styled.input`
 border: none;

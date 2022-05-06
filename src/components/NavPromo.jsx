@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import {mobile} from "../responsive"
+import {mobile, tablet} from "../responsive"
 
 const Container = styled.div`
 height: 30px;
@@ -8,6 +8,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 ${mobile({ display: "none" })}
+${tablet({ display: "none" })}
 `
 
 const PromoText = styled.p`

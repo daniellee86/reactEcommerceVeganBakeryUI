@@ -32,8 +32,8 @@ margin: 10px 0px;
 font-size: 22px;
 font-weight: 700;
 ${mobile({ 
-margin: "0px",
-fontSize: "12px" })}
+margin: " 0px",
+fontSize: "10px" })}
 `
 const Button = styled.button`
 border: 1px solid black;
